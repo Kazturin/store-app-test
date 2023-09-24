@@ -1,6 +1,6 @@
 import { createStore } from "vuex";
 import axiosClient from "../axios";
-
+import axios from "axios";
 
 const store = createStore({
   state: {
@@ -32,10 +32,7 @@ const store = createStore({
         })
     },
       login({commit}, user) {
-
-          return axiosClient.post('/login', user)
-              .then(({data}) => {
-                  console.log(data)
+          return axiosClient.post('/login', user).then(({data}) => {
                   commit('setUser', data.user);
                   commit('setToken', data.token);
                   return data;

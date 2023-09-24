@@ -153,7 +153,7 @@ function register(ev) {
     .then(() => {
       loading.value = false;
       router.push({
-        name: "Dashboard",
+        name: "Products",
       });
     })
     .catch((error) => {

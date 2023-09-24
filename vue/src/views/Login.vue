@@ -160,8 +160,7 @@ function login(ev) {
     })
     .catch((err) => {
       loading.value = false;
-      console.log(err)
-      errorMsg.value = err.response.data.error;
+      errorMsg.value = err.response.data.message;
     });
 }
 </script>
