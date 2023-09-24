@@ -20,13 +20,7 @@ docker run --rm \
     composer install --ignore-platform-reqs
 ```
 
-**3. Copy `.env.example` into `.env`**
-
-```bash
-cp .env.example .env
-```
-
-**4. Start the project in detached mode**
+**3. Start the project in detached mode**
 
 ```bash
 ./vendor/bin/sail up -d
@@ -36,25 +30,17 @@ cp .env.example .env
 ./vendor/bin/sail bash
 ```
 
-**5. Set encryption key**
-
-```bash
-php artisan key:generate --ansi
-```
-
-**6. Run migrations**
+**4. Run migrations**
 
 ```bash
 php artisan migrate
 ```
 
-**7. Run seed**
-
 ```bash
 php artisan db:seed
 ```
 
-**8. Run NPM**
+**5. Run NPM**
 
 ```bash
 npm install
@@ -62,4 +48,3 @@ npm install
 ```bash
 npm run build
 ```
-**php artisan storage:link**
