@@ -2,12 +2,13 @@ Store app test project
 
 ### Installation with docker
 
-#### 1. Clone the project
+1. Clone the project
 ```bash
 https://github.com/Kazturin/store-test-project.git
 ```
 
-#### 2. Run `composer install`
+2. Run `composer install`
+
 Navigate into project folder using terminal and run
 
 ```bash
@@ -19,13 +20,13 @@ docker run --rm \
     composer install --ignore-platform-reqs
 ```
 
-#### 3. Copy `.env.example` into `.env`
+3. Copy `.env.example` into `.env`
 
 ```bash
 cp .env.example .env
 ```
 
-#### 4. Start the project in detached mode
+4. Start the project in detached mode
 
 ```bash
 ./vendor/bin/sail up -d
@@ -35,25 +36,25 @@ cp .env.example .env
 ./vendor/bin/sail bash
 ```
 
-#### 5. Set encryption key
+5. Set encryption key
 
 ```bash
 php artisan key:generate --ansi
 ```
 
-#### 6. Run migrations
+6. Run migrations
 
 ```bash
 php artisan migrate
 ```
 
-#### 7. Run seed
+7. Run seed
 
 ```bash
 php artisan db:seed
 ```
 
-#### 8. Run NPM
+8. Run NPM
 
 ```bash
 npm install
