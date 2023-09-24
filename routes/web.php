@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::middleware('auth')->group(function () {
+Route::middleware(['auth','role:manufacturer'])->group(function () {
     Route::get('/', function () {
         return redirect('dashboard');
     });

@@ -60,6 +60,6 @@ php artisan db:seed
 npm install
 ```
 ```bash
-npm runn build
+npm run build
 ```
 
