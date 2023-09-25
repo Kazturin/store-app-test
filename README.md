@@ -48,3 +48,6 @@ npm install
 ```bash
 npm run build
 ```
+
+http://localhost - admin <br>
+http://localhost:3000 - client
